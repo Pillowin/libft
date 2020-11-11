@@ -6,18 +6,18 @@
 #    By: agautier <agautier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/05 12:52:43 by agautier          #+#    #+#              #
-#    Updated: 2020/11/11 15:36:28 by agautier         ###   ########.fr        #
+#    Updated: 2020/11/11 15:43:31 by agautier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	libft.a
-SRC			=	$(wildcard src/*.c)				\
-				$(wildcard ft_printf/src/*.c)	\
-				$(wildcard ft_printf/src/ft_print/*.c)
-OBJ			=	$(SRC:.c=.o)
-HEADER		=	header
-CC			=	gcc
-CFLAGS		=	-Wall -Wextra -Werror
+NAME	=	libft.a
+SRC		=	$(wildcard src/*.c)			\
+			$(wildcard ft_printf/*.c)	\
+			$(wildcard ft_printf/ft_print/*.c)
+OBJ		=	$(SRC:.c=.o)
+HEADER	=	header
+CC		=	gcc
+CFLAGS	=	-Wall -Wextra -Werror
 
 all: $(NAME)
 
