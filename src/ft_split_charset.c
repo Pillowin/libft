@@ -91,7 +91,7 @@ static int	fill_tab(char ***tab, int *words_len, char *str, char *charset)
 	i_str = 0;
 	while (d1 < ft_word_count(str, charset) && str[i_str])
 	{
-		if (!((*tab)[d1] = malloc((words_len[d1] + 1) * sizeof(char))))
+		if (!((*tab)[d1] = malloc((words_len[d1] + 2) * sizeof(char))))
 		{
 			while (d1 >= 0)
 				ft_free(tab[d1--]);
