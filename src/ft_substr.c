@@ -41,6 +41,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while (i < len)
 		ptr[i++] = s[start++];
 	ptr[i] = '\0';
-	s = NULL;
 	return (ptr);
 }
