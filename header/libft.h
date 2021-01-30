@@ -6,7 +6,7 @@
 /*   By: agautier <agautier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:15:19 by agautier          #+#    #+#             */
-/*   Updated: 2020/11/11 15:01:00 by agautier         ###   ########.fr       */
+/*   Updated: 2021/01/30 15:41:09 by agautier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int *printed, int fd);
 void				ft_putunbr_base(unsigned int n, char *base,
 int *printed, int fd);
 void				ft_putlnbr(long nb);
-int					ft_printf(const char *format, ...);
 
 /*
 **	char
