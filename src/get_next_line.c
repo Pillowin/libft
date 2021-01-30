@@ -6,12 +6,11 @@
 /*   By: agautier <agautier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 11:21:39 by agautier          #+#    #+#             */
-/*   Updated: 2020/11/10 12:07:57 by agautier         ###   ########.fr       */
+/*   Updated: 2021/01/30 16:39:39 by agautier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "get_next_line.h"
 
 static char	*ft_realloc(char *ptr, size_t size)
 {

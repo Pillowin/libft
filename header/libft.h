@@ -6,7 +6,7 @@
 /*   By: agautier <agautier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:15:19 by agautier          #+#    #+#             */
-/*   Updated: 2021/01/30 15:41:09 by agautier         ###   ########.fr       */
+/*   Updated: 2021/01/30 16:38:15 by agautier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,26 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+#ifndef GET_NEXT_LINE_H
+
+# define GET_NEXT_LINE_H
+
+# include <limits.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 4096
+# elif BUFFER_SIZE < 0
+#  define BUFFER_SIZE 0
+# endif
+
+# define GNL_OK 1
+# define GNL_END 0
+# define GNL_ERR -1
+
+int		get_next_line(int fd, char **line);
+
+#endif
 
 typedef	struct		s_list
 {
@@ -89,7 +109,6 @@ char				*ft_itoa(int n);
 char				**ft_split(char const *s, char c);
 char				**ft_split_charset(char *str, char *charset);
 char				*ft_get_whitespaces();
-int					get_next_line(int fd, char **line);
 
 /*
 **	mem
