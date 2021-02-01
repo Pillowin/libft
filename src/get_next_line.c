@@ -20,7 +20,7 @@ static char	*ft_realloc(char *ptr, size_t size)
 
 	if (!(new_ptr = malloc(size)))
 	{
-		free(ptr);
+		ft_free((void **)&ptr);
 		ptr = NULL;
 		return (0);
 	}
@@ -32,7 +32,7 @@ static char	*ft_realloc(char *ptr, size_t size)
 		i++;
 	}
 	new_ptr[i] = '\0';
-	free(ptr);
+	ft_free((void **)&ptr);
 	ptr = NULL;
 	return (new_ptr);
 }
