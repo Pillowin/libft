@@ -16,9 +16,9 @@
 **	Free un pointeur et le met a NULL.
 */
 
-int	ft_free(void *ptr)
+int	ft_free(void **ptr)
 {
-	free(ptr);
-	ptr = NULL;
+	free(*ptr);
+	*ptr = NULL;
 	return (0);
 }
